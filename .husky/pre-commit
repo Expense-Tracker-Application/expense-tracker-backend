@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "Running pre-commit checks..."
+# Add linting commands here when you have them set up
+# For example: npm run lint
+
+npm test

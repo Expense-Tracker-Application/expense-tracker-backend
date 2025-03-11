@@ -128,3 +128,15 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Environment files
+.env
+.env.development
+.env.staging
+.env.production
+.env.local
+.env.*.local
+
+# But keep example files
+!.env.example
+!.env.*.example

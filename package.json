@@ -1,0 +1,48 @@
+{
+  "name": "expense-tracker-backend",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "start": "node -r tsconfig-paths/register dist/app.js",
+    "dev": "cross-env NODE_ENV=development nodemon -r tsconfig-paths/register src/app.ts",
+    "dev:staging": "cross-env NODE_ENV=staging nodemon -r tsconfig-paths/register src/app.ts",
+    "dev:prod": "cross-env NODE_ENV=production nodemon -r tsconfig-paths/register src/app.ts",
+    "start:dev": "cross-env NODE_ENV=development ts-node -r tsconfig-paths/register dist/app.js",
+    "start:staging": "cross-env NODE_ENV=staging ts-node -r tsconfig-paths/register dist/app.js",
+    "start:prod": "cross-env NODE_ENV=production ts-node -r tsconfig-paths/register dist/app.js",
+    "prepare": "husky",
+    "commit": "cz"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.4.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@types/dotenv": "^8.2.3",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.10",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.7",
+    "nodemon": "^3.1.9",
+    "prisma": "^6.5.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.8.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
