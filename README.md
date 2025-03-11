@@ -1,29 +1,30 @@
 # Expense Tracker Backend
 
-A backend service for tracking expenses with support for multiple environments.
+A backend service for tracking expenses.
 
-## Environment Configuration
+## Getting Started
 
-This application supports multiple environments:
+### Prerequisites
 
-- **Development**: Local development environment
-- **Staging**: Pre-production testing environment
-- **Production**: Live production environment
+- Node.js (v16 or higher)
+- pnpm (v7 or higher)
 
-## Environment Files
+### Installation
 
-The application uses environment-specific configuration files:
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/expense-tracker-backend.git
+cd expense-tracker-backend
 
-- `.env.development` - Development environment settings
-- `.env.staging` - Staging environment settings
-- `.env.production` - Production environment settings
-- `.env` - Default fallback settings
+# Install dependencies
+pnpm install
+```
 
-## Available Scripts
+### Running the Application
 
-In the project directory, you can run:
+The application supports multiple environments (development, staging, production).
 
-### Development
+#### Development Mode
 
 ```bash
 # Run in development mode
@@ -36,7 +37,7 @@ pnpm dev:staging
 pnpm dev:prod
 ```
 
-### Production
+#### Production Mode
 
 ```bash
 # Build the application
@@ -52,20 +53,18 @@ pnpm start:staging
 pnpm start:prod
 ```
 
-## Configuration Options
+### Creating Commits
 
-The following configuration options are available in the environment files:
+Use our commit script to create properly formatted commits:
 
-### Server Configuration
-- `PORT` - The port the server will listen on
-- `HOST` - The host address to bind to
-- `NODE_ENV` - The environment mode (development, staging, production)
+```bash
+pnpm commit
+```
 
-### Database Configuration
-- `DATABASE_URL` - The connection string for the database
+## Documentation
 
-### Logging
-- `LOG_LEVEL` - The logging level (debug, info, warn, error)
+All project documentation is available in the `doc` folder:
 
-### API Configuration
-- `API_PREFIX` - The prefix for API routes 
+- [Environment Configuration](doc/environments.md)
+- [Import Aliases](doc/alias.md)
+- [Commit Message Standards](doc/commit-standards.md) 
