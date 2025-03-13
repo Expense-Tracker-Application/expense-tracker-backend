@@ -1,6 +1,7 @@
-import dotenv from 'dotenv';
-import path from 'path';
 import fs from 'fs';
+import path from 'path';
+
+import dotenv from 'dotenv';
 
 // Define the available environments
 export type Environment = 'development' | 'staging' | 'production';

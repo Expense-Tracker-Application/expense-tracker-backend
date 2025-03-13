@@ -1,4 +1,5 @@
 import express, { Express, Request, Response } from "express";
+
 import config from "@config/environment";
 
 const app: Express = express();
